@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be082451-14ac-4bcf-be47-6be3cfe3874b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GError.go" beforeDir="false" afterPath="$PROJECT_DIR$/GError.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GumScript.go" beforeDir="false" afterPath="$PROJECT_DIR$/GumScript.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GumScriptBackend.go" beforeDir="false" afterPath="$PROJECT_DIR$/GumScriptBackend.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ld_darwinx64.go" beforeDir="false" afterPath="$PROJECT_DIR$/ld_darwinx64.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/type.go" beforeDir="false" afterPath="$PROJECT_DIR$/type.go" afterDir="false" />
-    </list>
+    <list default="true" id="be082451-14ac-4bcf-be47-6be3cfe3874b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +82,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -115,9 +108,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553366" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26108375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
