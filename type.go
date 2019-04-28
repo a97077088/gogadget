@@ -1,4 +1,4 @@
-package main
+package gogadget
 
 /*
 #include "frida-gumjs.h"
