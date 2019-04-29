@@ -39,8 +39,7 @@ func (this *GumScriptBackend) Create_script(_name string, _script string) (*GumS
 	defer C.free(unsafe.Pointer(script))
 
 	var gerr *GError
-	var gcl *C.GCancellable
-	pscript := C.gum_script_backend_create_sync(this.CTypePtr(), cname, script, gcl, (**C.GError)(unsafe.Pointer(&gerr)))
+	pscript := C.gum_script_backend_create_sync(this.CTypePtr(), cname, script, (*C.GCancellable)(C.NULL), (**C.GError)(unsafe.Pointer(&gerr)))
 	if gerr != nil {
 		return nil, errors.New(gerr.Message())
 	}

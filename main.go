@@ -15,6 +15,7 @@ func main() {
 	backend := NewGumScriptBackend()
 
 	script, err := backend.Create_script("example", `
+console.log("load ok");
 Interceptor.attach(Module.findExportByName(null, 'open'), {
 onEnter: function (args) {
 console.log('[*] open("' + Memory.readUtf8String(args[0]) + '")');
@@ -34,5 +35,13 @@ Interceptor.attach(Module.findExportByName(null, "close"), {
 		fmt.Println(_message)
 	})
 	script.Load()
+	ctx:=GMainContext_Get_thread_default()
+	for{
+		pd:=ctx.Pending()
+		if pd==false{
+			break
+		}
+		ctx.Iteration()
+	}
 
 }
