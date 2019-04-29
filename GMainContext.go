@@ -38,6 +38,9 @@ func (this *GMainContext) Pending()bool {
 	}
 }
 
+func NewGMainContext()*GMainContext{
+	return GMain_ContextFormPtr(uintptr(unsafe.Pointer(C.g_main_context_new())))
+}
 
 func GMainContext_Get_thread_default()*GMainContext{
 	return GMain_ContextFormPtr(uintptr(unsafe.Pointer(C.g_main_context_get_thread_default())))

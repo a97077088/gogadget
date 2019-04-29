@@ -16,7 +16,6 @@ var calls = sync.Map{}
 
 //export on_message
 func on_message(script *C.GumScript, message *C.gchar, data *C.GBytes, user_data C.gpointer) {
-	fmt.Println("script call")
 	defer C.g_bytes_unref(data)
 	key := fmt.Sprintf("%d", uintptr(unsafe.Pointer(script)))
 	jsobj := make(map[string]interface{})
